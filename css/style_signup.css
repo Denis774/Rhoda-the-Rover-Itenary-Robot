@@ -89,7 +89,7 @@ input[type="submit"]:focus
 	padding: 40px;
 	width: 300px;
 	height: 400px;
-	background-image: url(image1.jpg);
+	background-image: url(img/Rhoda.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -143,4 +143,18 @@ button.social
 .google
 {
 	background: #dd4b39;
+}
+
+img
+{
+	align-content: left;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;
+	padding: 40px;
+	width: 300px;
+	height: 400px;
+	background-image: url(img/Rhoda.jpg);
+	background-size: cover;
+	background-position: center;
 }
