@@ -1,0 +1,28 @@
+{
+	"trips":[
+		{
+		"itinerary": "17 Days Uganda Safari",
+		"rating": 3
+		},
+		{
+		"itinerary": "3 Days Kibale Chimpanzee Safari",
+		"rating": 1
+		},
+		{
+		"itinerary": "20 Days Uganda, Rwanda and Tanzania Safari",
+		"rating": 3
+		},
+		{
+		"itinerary": "18 Days Uganda Safari",
+		"rating": 3
+		},
+		{
+		"itinerary": "3 Days Murchison Falls Wildlife Safari in Uganda",
+		"rating": 5
+		},
+		{
+		"itinerary": "3 Days Queen Elizabeth National Park",
+		"rating": 3
+		}
+	]
+}
