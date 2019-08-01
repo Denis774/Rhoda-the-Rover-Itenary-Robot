@@ -197,7 +197,7 @@ padding-right: 15px;
 .tab{
     background: #f18904;
     margin: 15px;
-    width: calc(100% / 6);  
+    width: calc(100% * 6);  
     display: inline-block;
     vertical-align: top;   
     border:1px solid red;
