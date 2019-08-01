@@ -1,286 +1,111 @@
-body
-{
- text-align:center;
- width:100%;
- background-position: center center;
- margin:0 auto;
- padding:0px;
- font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
- background: #ffffff;
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+align-content: center;}
 
-	box-sizing: border-box;
-
-}
-#container{
-	width: 980px;
-	padding:5px;
-
-}
-#header_wrapper
-{
- width:auto;
- min-width:980px;
- background-color:#1d3e57;
-}
-#header
-{
- width:980px;
- margin:0px auto;
- padding:0px;
- height:78px;
-}
-#header li
-{
- list-style-type:none;
- float:left;
- text-align:left;
- color:white;
-}
-#header #sitename
-{
- margin-top:25px;
-}
-#header #sitename a
-{
- color:white;
- text-decoration:none;
- font-size:30px;
- font-weight:900;
-}
-#header form
-{
- margin-top:15px;
-float:right;
-padding-right: 15px;
-}
-#header form li
-{
- font-size:13px;
- margin-left:15px;
-}
-#header form li a
-{
- color:#A9BCF5;
- text-decoration:none;
-}
-#header form input[type="text"]
-{
- margin-top:3px;
- margin-bottom:3px;
- width:150px;
- border:1px solid #08298A;
- height:25px;
- padding-left:3px;
-}
-#header form input[type="password"]
-{
- margin-top:3px;
- margin-bottom:3px;
- width:150px;
- border:1px solid #08298A;
- height:25px;
- padding-left:3px;
-}
-#header form input[type="submit"]
-{
- height:25px;
- margin-top:18px;
- background-color:#071621;
- color:white;
- border:1px solid #071621;
-}
-#wrapper
-{
- margin:0 auto;
- padding:0px;
- text-align:center;
- width:980px;
-
-}
-#wrapper div
-{
- float:left;
- font-family: helvetica, arial, sans-serif;
- color: #ffffff;
-}
-#wrapper #div1
-{
- margin-top:30px;
- width:590px;
- text-align:left;
-}
-#wrapper #div1 p
-{
- font-size:20px;
- font-family:arial;
- font-weight:bold;
- margin:0px;
- color:#0e385f;
-}
-#wrapper #div2
-{
- position:absolute;
- display:hidden;
- top:63%;
- left:75%;
- width:319px;
- height:298px;
- margin-top:-263px;
- margin-left:-200px;
- background-color:#248a3e91;
- z-index:2;
- padding:5px;
-}
-#wrapper #div2 h1
-{
- margin:0px;
- font-size:37px;
- color:#2E2E2E;
-}
-#wrapper #div2 p
-{
- font-size:18px;
- color:#2E2E2E;
-}
-#wrapper #div2 li
-{
- list-style-type:none;
- margin-top:10px;
-}
-#footer_wrapper
-{
- width:100%;
- clear:both;
- float:left;
- margin-top:30px;
- min-width:995px;
- background-color:white;
- text-align:left;
-
-}
-#footer
-{
- width:980px;
- margin:0px auto;
- padding:0px;
- border-bottom:1px solid #E6E6E6;
- height:30px;
- line-height:30px;
- font-size:12px;
- color:#848484;
- position: fixed;
- background-color: #1d3e57;
- bottom: 0px;
- left: 0px;
- right: 0px;
- margin-bottom: 0px;
-}
-#footer a
-{
- color:#fff;
- display:inline;
- margin-left:10px;
- text-decoration:none;
-}
-#footer a:hover
-{
- text-decoration:underline;
-}
-#sectionbelowslider{
-	clear: both;
-	display: flex;
-	/*background: #f18904;*/
-    text-align: center;
-    width: 980px;
-    margin-bottom: 30px;
-}
-.tab{
-    background: #f18904;
-    margin: 15px;
-    width: calc(100% / 6);  
-    display: inline-block;
-    vertical-align: top;   
-    border:1px solid red;
-    text-align:center;
-    margin:2%;    
-    padding:20px;
-}
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+    
 }
 
-.mySlides {
-  display: none;
-  height: 360px;
-  border: solid 1px black;
-     
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #222428;
-    font-weight: bold;
-    font-size: 30px;
-    transition: .6s ease;
-    border-radius: 0 3px 3px 0
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
 
-.next {
-    right: -50px;
-    border-radius: 3px 3px 3px 3px
+button:hover {
+  opacity:1;
 }
 
-.prev {
-    left: -50px;
-    border-radius: 3px 3px 3px 3px
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
 }
 
-.prev:hover,
-.next:hover {
-    color: #f2f2f2;
-    background-color: rgba(0, 0, 0, 0.8)
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
 }
 
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding-top: 12px;
-  padding-bottom: 12px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #222428
+/* Add padding to container elements */
+.container {
+  padding: 16px;
 }
 
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
 }
 
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color .6s ease
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
-.active,
-.dot:hover {
-    background-color: #717171
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
 }
