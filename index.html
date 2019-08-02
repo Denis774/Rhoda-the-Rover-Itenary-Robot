@@ -11,7 +11,7 @@
 				<div id="header">
 					<form action="post">
 						<li>User Name<br><input type="text" name="username"></li>
-						<li>Password<br><input type="password" name="password"><br><a href="">Forgotten account?</a></li>
+						<li>Password<br><input type="password" name="password"><br><a href="">Forgotten password or username?</a></li>
 						<li><input type="submit" name="login" value="Log In"></li>
 					</form>
 				</div>
@@ -25,26 +25,105 @@
 			</div>
 
 			<div id="div2">
-				<h3>Plan your trip with our itineraries</h3>
-				<li>
-					<input type="text" placeholder="First Name" id="firstname"><input type="text" placeholder="Surname" id="surname">
-				</li>
-				<li>
-					<input type="text" placeholder="Mobile number or email address">
-				</li>
-				<li>
-					<select><option>Day</option></select>
-					<select><option>Month</option></select>
-					<select><option>Year</option></select>
-				</li>
-				<li>
-					<select><option>People</option></select>
-					
-				</li>
-				<li>
-					<input type="radio">Female <input type="radio">Male</li>
-				<li><input type="submit" value="Get trips"></li>
-			</div>
+				<div>
+						<h3>Get Itinerary Recommendations</h3>
+						<li>
+							<input type="text" placeholder="First Name" id="firstname">
+						</li>
+						<li><input type="text" placeholder="Surname" id="surname"></li>
+						<li>
+							<input type="text" placeholder="Mobile number or email">
+						</li>
+						<li>
+								<label style="display: inline" for="start">From:</label>
+									<input type="month" id="start" name="start"
+										min="2019-03" value="2019-08">
+							</li>
+							<li>
+									<label style="display: inline" for="start">To:</label>
+										<input type="month" id="start" name="start"
+											min="2019-03" value="2019-08">
+								</li>
+						<!-- <li>
+							<label style="display: contents;" >No. of Days
+								<select size="1">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+									<option>24</option>
+									<option>25</option>
+									<option>26</option>
+									<option>27</option>
+									<option>28</option>
+									<option>29</option>
+									<option>30</option>
+									
+								</select>
+							</label>
+						</li> -->
+						<li>
+								<label style="display: contents;">No. of People
+										<select size="1">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+												<option>10</option>
+												<option>11</option>
+												<option>12</option>
+												<option>13</option>
+												<option>14</option>
+												<option>15</option>
+												<option>16</option>
+												<option>17</option>
+												<option>18</option>
+												<option>19</option>
+												<option>20</option>
+												<option>21</option>
+												<option>22</option>
+												<option>23</option>
+												<option>24</option>
+												<option>25</option>
+												<option>26</option>
+												<option>27</option>
+												<option>28</option>
+												<option>29</option>
+												<option>30</option>
+												
+											</select>
+								</label>
+						</li>
+						<li>
+							<input type="radio">Female <input type="radio">Male</li>
+						<li><input type="submit" value="Get trips"></li>
+					</div>
+				</div>
+				
 			<div class="slideshow-container">
 				<div class="mySlides fade">
 					<img src='img/imgs1.jpg' style='width: 100%;' alt=""/>
@@ -73,12 +152,12 @@
 				</div>
 				<div id="sectionbelowslider">
 					<div class="tab">
-						<h1>Popular Destinations</h1>
+						<h1>Top 5 Itineraries </h1>
 						<div class="test" style=" text-align: left;" ></div>
 					</div>
-					<div class="container tab">
+					<div class="container tab" >
 						<div class="smileybox">	
-							<h1>Rating Stars</h1>
+							<h1>Rate this Itinerary</h1>
 							<label for="r1" class="check"><input type="checkbox" id="r1" onchange="ratingStar(event)"/><i class="em em-weary"></i></label>
 							<label for="r2" class="check"><input type="checkbox" id="r2" onchange="ratingStar(event)"/><i class="em em-worried"></i></label>
 							<label for="r3" class="check"><input type="checkbox" id="r3" onchange="ratingStar(event)"/><i class="em em-blush"></i></label>
@@ -121,6 +200,7 @@
 	</body>
 
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/ratings.js"></script>	
+	<script type="text/javascript" src="js/ratings.js"></script>
+	<script type="text/javascript" src="js/starsystem.js"></script>	
 			
 </html>

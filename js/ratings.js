@@ -9,12 +9,13 @@ var data;
 	var list = document.querySelector(".test") ;
 	
 	for (let i=0; i<trips.length; i++){
-		var iDiv = document.createElement('LI');
+		var iDiv = document.createElement('UL');
 		iDiv.className = 'block';
 		iDiv.textContent = trips[i].itinerary
 		list.appendChild(iDiv);
 		
 		
-		console.log(iDiv.textContent);
+		// console.log(iDiv.textContent);
 	}	
  }
+// Rating stars JS//
