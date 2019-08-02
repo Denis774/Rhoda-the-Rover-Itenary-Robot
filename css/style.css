@@ -81,14 +81,14 @@ padding-right: 15px;
  height:25px;
  padding-left:3px;
 }
-#header form input[type="submit"]
+/* #header form input[type="submit"]
 {
  height:25px;
  margin-top:18px;
  background-color:#071621;
  color:white;
  border:1px solid #071621;
-}
+} */
 #wrapper
 {
  margin:0 auto;
