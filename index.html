@@ -3,7 +3,8 @@
 		<link href="css/style.css" type="text/css" rel="stylesheet"/>
 		<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
 		<script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		<script type="text/javascript" src="js/itinerary.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -32,16 +33,16 @@
 						</li>
 						<li><input type="text" placeholder="Surname" id="surname"></li>
 						<li>
-							<input type="text" placeholder="Mobile number or email">
+							<input type="text" placeholder="Mobile number or email" id="email">
 						</li>
 						<li>
 								<label style="display: inline" for="start">From:</label>
-									<input type="month" id="start" name="start"
+									<input type="month" id="startdate" name="start"
 										min="2019-03" value="2019-08">
 							</li>
 							<li>
 									<label style="display: inline" for="start">To:</label>
-										<input type="month" id="start" name="start"
+										<input type="month" id="enddate" name="start"
 											min="2019-03" value="2019-08">
 								</li>
 						<!-- <li>
@@ -82,7 +83,7 @@
 							</label>
 						</li> -->
 						<li>
-								<label style="display: contents;">No. of People
+								<label style="display: contents;" id="people">No. of People
 										<select size="1">
 												<option>1</option>
 												<option>2</option>
@@ -119,8 +120,8 @@
 								</label>
 						</li>
 						<li>
-							<input type="radio">Female <input type="radio">Male</li>
-						<li><input type="submit" value="Get trips"></li>
+							<input type="radio" id="gender">Female <input type="radio">Male</li>
+						<li><input id="gettrips" type="submit" value="Get trips"></li>
 					</div>
 				</div>
 				
