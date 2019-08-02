@@ -1,7 +1,7 @@
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+var signup = [];
+                $(document).on("click", ":submit", function(e) {
+                    var email = ($($email).val())
+                    email = [JSON.stringify(email)];
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
+                    localStorage.setItem('EmailsStuff', JSON.stringify(email));
+            });
