@@ -321,3 +321,20 @@ label i{
 label i.em{
 	display:none;	
 }
+
+/* Rating Section CSS */
+.star {
+    color: rgb(255, 38, 0);
+    font-size: 2.0rem;
+    padding: 0 1rem; /*space out the stars*/
+}
+.star::before{
+    content: '\2606';
+    cursor: pointer;
+}
+.star.rated::before{
+    content: '\2605';
+}
+.stars{...}
+.star.rated{...}
+.stars::after{...}
