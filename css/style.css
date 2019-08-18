@@ -286,7 +286,7 @@ padding-right: 15px;
     background-color: #717171
 }
 /* Style for Rating Section */
-input[type="checkbox"]{
+/* input[type="checkbox"]{
 	width:100%;
 	height:100%;
 	opacity:0;
@@ -320,7 +320,7 @@ label i{
 }
 label i.em{
 	display:none;	
-}
+} */
 
 /* Rating Section CSS */
 .star {
@@ -335,6 +335,6 @@ label i.em{
 .star.rated::before{
     content: '\2605';
 }
-.stars{...}
+/* .stars{...}
 .star.rated{...}
-.stars::after{...}
+.stars::after{...} */

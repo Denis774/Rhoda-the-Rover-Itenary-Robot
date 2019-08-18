@@ -74,6 +74,8 @@ function setRating(ev){
       match = true;
     }
     let starValue = parseInt(star.getAttribute('data-val'));
-  })
+  });
   document.querySelector('.stars').setAttribute('data-rating', num);
-}
+};
+
+

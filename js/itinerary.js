@@ -20,4 +20,7 @@ $(document).ready(function()
 //     var fgender = $('input').closest('label').text();
 //     alert(fgender);
 // });
+var divs = $('.block1').hide();
+divs.each($).fadeIn(1000).not(divs.last()).delay(5000).fadeOut(1000,$);
+
 });
